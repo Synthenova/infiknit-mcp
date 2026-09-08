@@ -1,5 +1,5 @@
 ---
-name: Infiknit
+name: infiknit
 description: Create AI images, videos, ads and connected canvas workflows in Infiknit, or generate media into a coding project. Covers node connections, reusable references, efficient generation, iteration and output review through MCP.
 ---
 
