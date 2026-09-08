@@ -1,0 +1,45 @@
+{
+  "name": "infiknit",
+  "version": "1.12.0",
+  "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
+  "author": {
+    "name": "Synthenova",
+    "url": "https://github.com/Synthenova",
+    "email": "privacy@infiknit.app"
+  },
+  "homepage": "https://infiknit.app",
+  "repository": "https://github.com/Synthenova/infiknit-mcp",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "infiknit",
+    "infiknit mcp",
+    "ai canvas",
+    "ai image generation",
+    "ai video generation"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Infiknit",
+    "shortDescription": "Local Infiknit MCP for image and video workflows",
+    "longDescription": "Infiknit is a desktop canvas for AI images, videos, and ads. This plugin connects Claude Code, Codex, Cursor, Grok Build, and other agents to the Infiknit app running on the same computer. Keep Infiknit open. Cloud agents cannot reach this local server.",
+    "developerName": "Synthenova",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Interactive"
+    ],
+    "websiteURL": "https://infiknit.app",
+    "privacyPolicyURL": "https://infiknit.app/privacy",
+    "termsOfServiceURL": "https://infiknit.app/terms",
+    "brandColor": "#050505",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [],
+    "defaultPrompt": [
+      "Generate an image into this project with Infiknit.",
+      "Build a product ad workflow on the Infiknit canvas.",
+      "List Infiknit image models I can use from this computer."
+    ]
+  }
+}

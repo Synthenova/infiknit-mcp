@@ -1,0 +1,30 @@
+{
+  "name": "infiknit",
+  "description": "Official Infiknit plugin for Grok Build and compatible agents.",
+  "owner": {
+    "name": "Synthenova",
+    "email": "privacy@infiknit.app"
+  },
+  "plugins": [
+    {
+      "name": "infiknit",
+      "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
+      "category": "development",
+      "source": {
+        "type": "local",
+        "path": "./plugins/infiknit"
+      },
+      "homepage": "https://infiknit.app",
+      "keywords": [
+        "infiknit",
+        "infiknit mcp",
+        "ai canvas",
+        "ai image generation",
+        "ai video generation"
+      ],
+      "domains": [
+        "infiknit.app"
+      ]
+    }
+  ]
+}

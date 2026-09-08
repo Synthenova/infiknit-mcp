@@ -1,0 +1,20 @@
+{
+  "name": "infiknit",
+  "interface": {
+    "displayName": "Infiknit"
+  },
+  "plugins": [
+    {
+      "name": "infiknit",
+      "source": {
+        "source": "local",
+        "path": "./plugins/infiknit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

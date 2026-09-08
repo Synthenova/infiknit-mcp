@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "Infiknit": {
+      "command": "node",
+      "args": [
+        "./bin/infiknit-mcp.cjs"
+      ]
+    }
+  }
+}

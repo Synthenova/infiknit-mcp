@@ -1,0 +1,14 @@
+{
+  "name": "infiknit",
+  "owner": {
+    "name": "Synthenova",
+    "email": "privacy@infiknit.app"
+  },
+  "plugins": [
+    {
+      "name": "infiknit",
+      "source": "./plugins/infiknit",
+      "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent."
+    }
+  ]
+}

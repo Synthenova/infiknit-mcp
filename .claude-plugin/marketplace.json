@@ -1,0 +1,32 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "infiknit",
+  "description": "Official Infiknit plugin for coding agents.",
+  "owner": {
+    "name": "Synthenova",
+    "email": "privacy@infiknit.app",
+    "url": "https://github.com/Synthenova"
+  },
+  "plugins": [
+    {
+      "name": "infiknit",
+      "source": "./plugins/infiknit",
+      "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
+      "version": "1.12.0",
+      "author": {
+        "name": "Synthenova"
+      },
+      "category": "productivity",
+      "homepage": "https://infiknit.app",
+      "repository": "https://github.com/Synthenova/infiknit-mcp",
+      "license": "SEE LICENSE IN LICENSE",
+      "keywords": [
+        "infiknit",
+        "infiknit mcp",
+        "ai canvas",
+        "ai image generation",
+        "ai video generation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "infiknit",
+  "version": "1.12.0",
+  "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
+  "author": {
+    "name": "Synthenova",
+    "url": "https://github.com/Synthenova"
+  }
+}
