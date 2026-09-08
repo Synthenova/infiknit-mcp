@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.synthenova/infiknit",
+  "title": "Infiknit",
+  "description": "Local Infiknit MCP for image and video canvas workflows. Keep Infiknit open on this computer.",
+  "repository": {
+    "url": "https://github.com/Synthenova/infiknit-mcp",
+    "source": "github"
+  },
+  "version": "1.12.0",
+  "websiteUrl": "https://infiknit.app",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Synthenova/infiknit-mcp/releases/download/v1.12.0/infiknit.mcpb",
+      "fileSha256": "471918d9098f265ea1bf952059b350eab236a83acaeead08918cb4a56bdc06cb",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

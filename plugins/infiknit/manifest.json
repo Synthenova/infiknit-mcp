@@ -1,0 +1,52 @@
+{
+  "manifest_version": "0.3",
+  "name": "infiknit",
+  "display_name": "Infiknit",
+  "version": "1.12.0",
+  "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
+  "long_description": "Infiknit is a desktop canvas for AI images, videos, and ads. This bundle connects a local coding agent to the Infiknit app running on the same computer. Keep Infiknit open. Cloud agents cannot reach this local server.",
+  "author": {
+    "name": "Synthenova",
+    "email": "privacy@infiknit.app",
+    "url": "https://github.com/Synthenova"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Synthenova/infiknit-mcp.git"
+  },
+  "homepage": "https://infiknit.app",
+  "documentation": "https://infiknit.app",
+  "support": "https://github.com/Synthenova/infiknit-mcp/issues",
+  "icon": "assets/icon-512.png",
+  "server": {
+    "type": "node",
+    "entry_point": "bin/infiknit-mcp.cjs",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/bin/infiknit-mcp.cjs"
+      ]
+    }
+  },
+  "tools_generated": true,
+  "keywords": [
+    "infiknit",
+    "mcp",
+    "image-generation",
+    "video-generation"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "privacy_policies": [
+    "https://infiknit.app/privacy"
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
+}
