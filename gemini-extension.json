@@ -1,0 +1,12 @@
+{
+  "name": "infiknit",
+  "version": "1.12.0",
+  "mcpServers": {
+    "Infiknit": {
+      "command": "node",
+      "args": [
+        "${extensionPath}${/}plugins${/}infiknit${/}bin${/}infiknit-mcp.cjs"
+      ]
+    }
+  }
+}
