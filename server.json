@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.synthenova/infiknit",
+  "name": "io.github.Synthenova/infiknit",
   "title": "Infiknit",
   "description": "Local Infiknit MCP for image and video canvas workflows. Keep Infiknit open on this computer.",
   "repository": {
