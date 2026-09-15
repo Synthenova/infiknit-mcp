@@ -58,6 +58,10 @@ Or clone this repo and point `args` at `plugins/infiknit/bin/infiknit-mcp.cjs`. 
 - Create, connect, and queue canvas nodes for ads, product shots, and multi-shot workflows.
 - Inspect results without leaving the agent.
 
+## Tested workflow resource
+
+For a reproducible creative example with sample inputs, a versioned blueprint, MCP steps, expected outputs, and local-connection limits, see [`examples/three-shot-ugc-product-ad.md`](examples/three-shot-ugc-product-ad.md).
+
 Keep Infiknit open while work runs. Replacing the token in **Settings → MCP Connect** refreshes one-click agent installs; this plugin rereads the new token on the next launch.
 
 ## Security

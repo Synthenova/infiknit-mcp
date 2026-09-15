@@ -1,0 +1,92 @@
+{
+  "schema": "https://github.com/Synthenova/infiknit-mcp/examples/creative-workflow-blueprint.schema.json",
+  "resourceVersion": "2026-09-15",
+  "title": "Three-shot UGC product ad workflow",
+  "purpose": "Create a reusable Infiknit canvas plan for a short product ad: hook, demonstration, and payoff.",
+  "sampleInputs": {
+    "clientId": "editorial-demo-2026-09-15",
+    "projectTitle": "UGC product ad - insulated tumbler",
+    "workingDirectory": "/Users/alex/projects/tumbler-campaign",
+    "product": "32 oz stainless insulated tumbler",
+    "audience": "commuters who want coffee to stay hot through the morning",
+    "format": "vertical 9:16 social ad",
+    "brandConstraints": [
+      "matte sage green product finish",
+      "no invented testimonials",
+      "no readable brand claims unless supplied by the user"
+    ],
+    "referenceAssets": [
+      "One product photo or existing Infiknit Product reference asset, if available"
+    ]
+  },
+  "workflow": {
+    "nodes": [
+      {
+        "clientRef": "brief",
+        "type": "Text",
+        "title": "Shared ad brief",
+        "prompt": "Vertical UGC-style ad for a matte sage 32 oz insulated tumbler. Audience: commuters who want coffee to stay hot through the morning. Keep visuals natural, handheld, and product-forward. Do not add unsupported performance claims or fake testimonials."
+      },
+      {
+        "clientRef": "hook_still",
+        "type": "Image",
+        "title": "Hook still",
+        "prompt": "Close handheld kitchen-counter shot: commuter reaches for the matte sage insulated tumbler next to keys and a phone, early morning light, natural product detail, no text overlays."
+      },
+      {
+        "clientRef": "demo_still",
+        "type": "Image",
+        "title": "Demo still",
+        "prompt": "Mid-shot of coffee being poured into the matte sage insulated tumbler on a desk, visible steam, realistic hand position, clean background, no logos unless supplied."
+      },
+      {
+        "clientRef": "payoff_still",
+        "type": "Image",
+        "title": "Payoff still",
+        "prompt": "Commuter holding the same matte sage tumbler on a train platform, calm morning commute, product clearly visible, no text overlays."
+      },
+      {
+        "clientRef": "hook_clip",
+        "type": "Video",
+        "title": "Hook clip",
+        "prompt": "Subtle handheld push-in as the commuter grabs the tumbler and exits frame. Keep the product shape and matte sage finish consistent."
+      },
+      {
+        "clientRef": "demo_clip",
+        "type": "Video",
+        "title": "Demo clip",
+        "prompt": "Short realistic pour motion with gentle steam. Keep cup geometry stable and avoid adding labels or claims."
+      },
+      {
+        "clientRef": "payoff_clip",
+        "type": "Video",
+        "title": "Payoff clip",
+        "prompt": "Small natural camera sway as the commuter lifts the tumbler before boarding. Keep the same tumbler appearance."
+      }
+    ],
+    "connections": [
+      { "from": "brief", "to": "hook_still", "inputRole": "prompt" },
+      { "from": "brief", "to": "demo_still", "inputRole": "prompt" },
+      { "from": "brief", "to": "payoff_still", "inputRole": "prompt" },
+      { "from": "hook_still", "to": "hook_clip", "inputRole": "image" },
+      { "from": "demo_still", "to": "demo_clip", "inputRole": "image" },
+      { "from": "payoff_still", "to": "payoff_clip", "inputRole": "image" }
+    ],
+    "queuePlan": [
+      "Generate and inspect the three image stills first.",
+      "Only queue the video nodes after the stills match the product and composition.",
+      "Revise failed branches independently instead of regenerating the whole graph."
+    ]
+  },
+  "expectedOutputs": [
+    "One saved Infiknit canvas project containing the shared Text brief, three Image nodes, three Video nodes, and six explicit connections.",
+    "Three reviewed image stills before video spend.",
+    "Up to three short vertical clips ready for separate editing, captioning, or assembly outside this MCP surface."
+  ],
+  "localConnectionLimits": [
+    "Infiknit must be open on the same computer as the agent.",
+    "The MCP plugin talks to the local loopback server only; cloud-hosted agents cannot reach it directly.",
+    "Provider keys and OAuth sessions stay inside Infiknit and are not exposed to the agent.",
+    "The MCP surface can create, queue, inspect, and review canvas media; it does not provide final timeline editing, captions, or clip concatenation."
+  ]
+}

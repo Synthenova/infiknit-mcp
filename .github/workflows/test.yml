@@ -11,3 +11,4 @@ jobs:
         with:
           node-version: '22'
       - run: node tests/discover.test.cjs
+      - run: node tests/resource.test.cjs
