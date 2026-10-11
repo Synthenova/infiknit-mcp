@@ -55,8 +55,10 @@ Or clone this repo and point `args` at `plugins/infiknit/bin/infiknit-mcp.cjs`. 
 ## What it does
 
 - Generate an image or video into the agent’s project folder using keys already saved in Infiknit.
-- Create, connect, and queue canvas nodes for ads, product shots, and multi-shot workflows.
+- Create, connect, and queue canvas nodes for ads, product shots, and multi-shot workflows: one all-or-nothing `applyCanvasTransaction` per build, `verifyNodes` before queueing, exact model `controls` from `getCapabilities`.
 - Inspect results without leaving the agent.
+
+The plugin ships the same operating card and full guide the desktop app installs (`skills/infiknit/SKILL.md` and `GUIDE.md`), so an agent that installs from this marketplace reads the current tool contract.
 
 ## Tested workflow resource
 

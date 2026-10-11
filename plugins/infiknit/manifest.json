@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "infiknit",
   "display_name": "Infiknit",
-  "version": "1.12.0",
+  "version": "1.15.1",
   "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
   "long_description": "Infiknit is a desktop canvas for AI images, videos, and ads. This bundle connects a local coding agent to the Infiknit app running on the same computer. Keep Infiknit open. Cloud agents cannot reach this local server.",
   "author": {

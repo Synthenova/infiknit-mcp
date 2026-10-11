@@ -1,7 +1,7 @@
 {
   "name": "infiknit",
   "displayName": "Infiknit",
-  "version": "1.12.0",
+  "version": "1.15.1",
   "description": "Generate images, videos, and connected canvas workflows in Infiknit from your coding agent.",
   "author": {
     "name": "Synthenova",

@@ -7,13 +7,13 @@
     "url": "https://github.com/Synthenova/infiknit-mcp",
     "source": "github"
   },
-  "version": "1.12.0",
+  "version": "1.15.1",
   "websiteUrl": "https://infiknit.app",
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://github.com/Synthenova/infiknit-mcp/releases/download/v1.12.0/infiknit.mcpb",
-      "fileSha256": "471918d9098f265ea1bf952059b350eab236a83acaeead08918cb4a56bdc06cb",
+      "identifier": "https://github.com/Synthenova/infiknit-mcp/releases/download/v1.15.1/infiknit.mcpb",
+      "fileSha256": "1a076eafc0ff1d3ff6c6a81d124e5af658a6372f3d0c8ba6c5f6b7924d0748c0",
       "transport": {
         "type": "stdio"
       }

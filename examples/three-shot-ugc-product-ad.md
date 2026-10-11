@@ -19,11 +19,11 @@ Do not add unsupported performance claims, fake testimonials, or readable brand 
 ## Reproducible MCP steps
 
 1. Open Infiknit on the same computer as the agent, then connect the agent from **Settings -> MCP Connect** or this marketplace plugin.
-2. Call `getCanvas` and keep the returned `workflowId`.
+2. Call `getAppPresence`, then `getCanvas` and keep the returned `workflowId`.
 3. Call `createProject` with the current `workflowId`, `clientId: "editorial-demo-2026-09-15"`, and `title: "UGC product ad - insulated tumbler"`.
 4. Call `getCapabilities` for exact image and video model IDs and controls. Do not infer model settings from this example.
-5. Create the Text, Image, and Video nodes from the JSON blueprint with `createNodes`, using real model IDs and supported settings from step 4.
-6. Add the six listed edges with `connectNodes`.
+5. Create the Text, Image, and Video nodes from the JSON blueprint and the six listed edges in ONE `applyCanvasTransaction` (a `createNodes` operation followed by a `connectNodes` operation that references the new `clientRef`s), using real model IDs and the `controls` from step 4. Put duration, aspect ratio and resolution in structured settings; prompt text never sets them.
+6. Call `verifyNodes` on the three video nodes and check `summary.dispatchBlocked` is 0 before spending anything.
 7. Queue only the image nodes first with `queueNodes`. Use `waitForQueueRun` or `getQueueRun` until the queue is terminal.
 8. Inspect stills with `readImageNodes`. Fix product shape, finish, composition, or unwanted text before spending on video.
 9. Queue the three video nodes only after the stills are usable. Keep the returned `queueRunId` and observe it until terminal.
